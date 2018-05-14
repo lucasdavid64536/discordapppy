@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "main": "bot.js",
   "scripts": {
-    "start": "python bot.py"
+    "start": "python"
   },
   "dependencies": {
     "discord.js": "11.1.0",
