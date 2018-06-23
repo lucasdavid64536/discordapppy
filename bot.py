@@ -343,6 +343,6 @@ async def binfo(ctx):
 
 
 
-bot.run("NDU4OTEyODQ1NDM4OTEwNDY0.DgujqA.3X9efm0W_cVqkDF7o9Azc4okDAY")
+bot.run(os.getenv("TOKEN"))
 
 
