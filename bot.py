@@ -54,7 +54,7 @@ async def on_ready():
 async def help(ctx):
     """Help"""
     em = discord.Embed(title="".format(ctx.guild.name), description="", color=discord.Colour.blue())
-    em.set_author(name="Empero Help")
+    em.set_author(name="Help")
     em.add_field(name="**help**", value='Shows this message', inline=False)
     em.add_field(name="**say**", value='Make the bot say whatever you want', inline=False)
     em.add_field(name="**ping**", value='Check the bot latency', inline=False)
@@ -69,7 +69,7 @@ async def help(ctx):
 async def help2(ctx):
     """Help2"""
     em = discord.Embed(title="".format(ctx.guild.name), description="", color=discord.Colour.blue())
-    em.set_author(name="Empero Help 2")
+    em.set_author(name=" Help 2")
     em.add_field(name="**Help2**",value='Shows this message', inline=False)
     em.add_field(name="**playerinfo @<member>**", value="""See somebody`s info
 [NOTE: This works by: |pinfo [id/nickname/name/@name]""", inline=False)
@@ -89,7 +89,7 @@ async def help2(ctx):
 async def help3(ctx):
     """Help3"""
     em = discord.Embed(title="".format(ctx.guild.name), description="", color=discord.Colour.blue())
-    em.set_author(name="Empero Help 2")
+    em.set_author(name="Help 2")
     em.add_field(name="**Help3**",value='Shows this message', inline=False)
     em.add_field(name="**kick**", value='Kicks a member (works only if the members has the Kick permission)', inline=False)
     em.add_field(name="**ban**", value='Bans a member (works only if the members has the Ban permission)', inline=False)
@@ -162,8 +162,8 @@ async def ping(ctx):
     """Get your MS"""
     em = discord.Embed(title="".format(ctx.guild.name), description="", color=discord.Colour.green())
     em.set_author(name="")
-    em.add_field(name="Ping", value='Pong! :ping_pong:', inline=True)
-    em.add_field(name="MS", value=f'Took : **{ctx.bot.latency * 1000:,.2f}ms**', inline=True)
+    em.add_field(name="Ping", value='Pong! :ping_pong:', inline=False)
+    em.add_field(name="MS", value=f'Took : **{ctx.bot.latency * 1000:,.2f}ms**', inline=False)
     
     await ctx.send(embed=em)
 
@@ -336,7 +336,7 @@ async def binfo(ctx):
     em.add_field(name="Prefix", value=ctx.bot.command_prefix, inline=True)
     em.add_field(name="Made with", value='Python 3.6.5', inline=True)
     em.add_field(name="Tag:", value=ctx.me.discriminator, inline=True)
-    em.add_field(name="Creator", value='<@419472407816830986>', inline=True)
+    em.add_field(name="Creator", value='<@444754305526792193>', inline=True)
     em.add_field(name="Created at", value=ctx.bot.user.created_at, inline=True)
     em.set_thumbnail(url=ctx.me.avatar_url)
     msg = await ctx.send(embed=em)
