@@ -43,7 +43,7 @@ async def kick(ctx, member: discord.Member = None):
 @bot.listen()
 async def on_ready():
           print('Logging in as', bot.user.name)
-          await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.listening, name='f.help'))
+          await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.listening, name='f.help/f?help'))
 
             
          
@@ -76,10 +76,11 @@ async def help2(ctx):
     em.add_field(name="**serverinfo**", value="""Get all the informations(In the server)
 [NOTE: |sinfo works too]""", inline=False)
     em.add_field(name="**botinfo**", value="""Get all the bot information
-[NOTE: |binfo works too]""", inline=False)
+[NOTE: f.binfo works too]""", inline=False)
     em.add_field(name="**lenny**", value='Just a lenny face', inline=False)
-    em.add_field(name="**respect**", value='Pay #respect', inline=False)
+    em.add_field(name="**respect**", value='Pay f.respect', inline=False)
     em.add_field(name="**support**", value='Returns the support server', inline=False)
+    em.add_field(name="**help3**", value='next page', inline=False)
     em.set_thumbnail(url=ctx.me.avatar_url)
     msg = await ctx.send(embed=em)
  
@@ -315,7 +316,7 @@ async def botinfo(ctx):
     em.add_field(name="Prefix", value=ctx.bot.command_prefix, inline=True)
     em.add_field(name="Made with", value='Python 3.6.5', inline=True)
     em.add_field(name="Tag:", value=ctx.me.discriminator, inline=True)
-    em.add_field(name="Creator", value='<@444754305526792193>', inline=True)
+    em.add_field(name="Creator", value='<@419472407816830986>', inline=True)
     em.add_field(name="Created at", value=ctx.bot.user.created_at, inline=True)
     em.set_thumbnail(url=ctx.me.avatar_url)
     msg = await ctx.send(embed=em)
