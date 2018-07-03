@@ -1,11 +1,16 @@
+ lines (312 sloc)  14.2 KB
 #!/usr/bin/env python3.6
 # -*- coding: utf-8 -*-
 import discord
+import random
 from discord.ext import commands
 import logging
 import traceback
 import asyncio
 import os
+from discord import opus
+from asyncio import sleep
+
 
 
 logging.basicConfig(level='INFO')
