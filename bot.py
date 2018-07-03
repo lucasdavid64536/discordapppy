@@ -393,4 +393,4 @@ async def binfo(ctx):
 
 
 bot.loop.create_task(presence())
-bot.run(os.get.env("TOKEN"))
+bot.run(os.getenv("TOKEN"))
