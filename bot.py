@@ -12,7 +12,7 @@ logging.basicConfig(level='INFO')
 bot = commands.Bot(command_prefix='f.')
 bot.load_extension("admin")
 bot.remove_command('help')
-
+bot.load_extension("music")
     
 @bot.listen()
 async def on_error(message, event, *args, **kwargs):
